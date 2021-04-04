@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <title>Registration</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header_container">
+            <div>
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
+            </div>
+            <div>
+                <button type="button" class="header__button">
+                    <img src="./img/burger.svg" alt="burger" width="32" height="23">
+                </button>
+                <a class="header__link" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
+                <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            <h2 class="header__title">menu</h2>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__sub-title" href="">man</a>
+                    <ul class="header__sub-navigation-list">
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Denim</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__sub-title" href="">woman</a>
+                    <ul class="header__sub-navigation-list">
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Polos</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Shirts</a></li>
+                    </ul>
+                </li>
+                <li class="header__navigation-item">
+                    <a class="header__sub-title" href="">kids</a>
+                    <ul class="header__sub-navigation-list">
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Polos</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Shirts</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="registration__title">
+            <h3 class="registration__heading">registration</h3>
+        </section>
+        <section class="registration__box">
+            <form class="form" action="#">
+                <fieldset>
+                    <legend class="registration__form-title">Your Name</legend>
+                    <p>
+                        <label for="first-name"></label>
+                        <input class="registration__form-item" id="first-name" type="text">
+                        <label for="last-name"></label>
+                        <input class="registration__form-item"id="last-name" type="text">
+                    </p>
+                    <div>
+                        <input class="radio" type="radio" id="male">
+                        <label class="radio-label" for="male">Male</label>
+                        <input class="radio" type="radio" id="female">
+                        <label class="radio-label" for="female">Female</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend class="registration__form-title">Login details</legend>
+                    <div class="registration__form">
+                        <label for="first-name"></label>
+                        <input class="registration__form-item" id="first-name" type="text">
+                        <label for="last-name"></label>
+                        <input class="registration__form-item" id="last-name" type="text">
+                        <p class="registration__form-commit">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and
+                            lowercase letters</p>
+                        <button class="registration__form-button" type="submit">join now &#8594</button>
+
+                    </div>
+                </fieldset>
+            </form>
+            <div class="registration__loyalty">
+                <h4 class="registration__loyalty-title">loyalty has its perks</h4>
+                <p class="registration__loyalty-text">Get in on the loyalty program where you can earn points and unlock
+                    serious perks. Starting with these
+                    as soon as you join:</p>
+                <ul class="registration__loyalty-list">
+                    <li class="registration__loyalty-item">15% off welcome offer
+                    </li>
+                    <li class="registration__loyalty-item">Free shipping, returns and exchanges on all orders
+                    </li>
+                    <li class="registration__loyalty-item">$10 off a purchase on your birthday
+                    </li>
+                    <li class="registration__loyalty-item">Early access to products</li>
+                    <li class="registration__loyalty-item">Exclusive offers & rewards</li>
+                </ul>
+
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__subscription">
+            <div class="footer__review">
+                <img class="footer__review-img" src="./img/smile-woman.png" alt="smile-woman" width="145" height="150">
+                <div class="footer__review-text">
+                    <q class="footer__quote">"Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span
+                            class="footer__quote-italic">a pulvinar purus condimentum"</span></q>
+                </div>
+            </div>
+            <div class="footer__subscribe">
+                <h2 class="footer__subscribe-title">subscribe <span class="footer__subscribe-subtitle">our newletterand
+                        promotion</span></h2>
+                <form class="footer__subscribe-form" action="#">
+                    <label for="email"></label>
+                    <input class="footer__subscribe-input" type="email" placeholder="Enter Your Email" id="email">
+                    <button class="footer__subscribe-button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer__socials">
+            <div class="footer__socials-row container">
+                <p class="footer__copyright">&copy 2021 Brand All Rights Reserved.</p>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item"><a href="#"><img src="./img/facebook-icon.png" alt="facebook-icon"
+                                width="32" height="32"></a></li>
+                    <li class="footer__socials-item"><a href="#"><img src="./img/instagram-icon.png"
+                                alt="instagram-icon" width="32" height="32"></a></li>
+                    <li class="footer__socials-item"><a href="#"><img src="./img/pinterest-icon.png"
+                                alt="pinterest-icon" width="32" height="32"></a></li>
+                    <li class="footer__socials-item"><a href="#"><img src="./img/twitter-icon.png" alt="twitter-icon"
+                                width="32" height="32"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
