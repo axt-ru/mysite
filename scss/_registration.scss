@@ -1,0 +1,149 @@
+/* Страница Registration   */
+
+.registration__heading {
+    padding: 59px 0 60px 230px;
+    background-color: #F8F3F4;
+    font-family: Lato;
+    color: #F16D7F;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.registration__box {
+    display: flex;
+}
+
+.form {
+    margin-left: 231px;
+    padding: 64px 128px 96px 0;
+}
+
+.registration__form-title {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+.registration__form-item {
+    margin-top: 21px;
+    display: block;
+    width: 360px;
+    height: 45px;
+    border: 1px solid #A4A4A4
+}
+
+::placeholder {
+    text-indent: 17px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    letter-spacing: 0em;
+    color: $light-gray;
+}
+
+
+.registration__form-commit {
+    width: 359px;
+    height: 32px;
+    margin-top: 16px;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    color: $light-gray;
+}
+
+.registration__form-button {
+    margin-top: 39px;
+    width: 167px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $dark-pink-color;
+    border: none;
+
+}
+
+.radio {
+    display: none;
+}
+
+.radio-label {
+    display: inline-block;
+    margin-top: 31px;
+    position: relative;
+    padding: 0 20px 33px 27px;
+}
+
+.radio-label:before {
+    position: absolute;
+    content: '';
+    width: 17px;
+    height: 17px;
+    left: 0px;
+    border-radius: 50%;
+    border: 1px solid #A4A4A4;
+}
+
+.radio-label:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 4px;
+    top: 5px;
+    border-radius: 50%;
+    background: $black-color;
+    display: none;
+}
+
+.radio:checked+.radio-label:before {
+    background: $black-color;
+}
+
+.radio:checked+.radio-label:after {
+    display: block;
+}
+
+.registration__loyalty-title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-transform: uppercase;
+    margin: 64px 0 22px 0;
+}
+
+.registration__loyalty-text {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 21px;
+    width: 652px;
+    height: 58px;
+}
+
+.registration__loyalty-item {
+    position: relative;
+    padding-left: 43px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    margin-bottom: 16px;
+}
+
+.registration__loyalty-item:before {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 16px;
+    top: 6px;
+    left: 0px;
+    height: 15px;
+    background-image: url("../img/checkbox.png");
+    background-size: 20px 16px;
+}
