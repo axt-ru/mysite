@@ -1,129 +1,193 @@
-.footer__subscription {
-    background-image: url("../img/beach.jpg");
-    min-height: 448px;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
+.footer {
 
-.footer__review {
-    min-width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__subscription {
+        background-image: url("../img/beach.jpg");
+        min-height: 448px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
 
-.footer__review-text {
-    max-width: 360px;
-    max-height: 99px;
-    text-align: center;
-    margin-top: 30px;
-}
+        @include tablet {
+            flex-direction: column;
+            padding: 54px 0 140px 0;
+        }
 
-.footer__quote {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-}
+        @include mobile {
+            padding: 54px 0 110px 0;
+        }
+    }
 
-.footer__quote-italic {
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 24px;
-}
+    &__review {
+        min-width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.footer__subscribe {
-    min-width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+    &__review-img {
+        display: block;
+        width: 144px;
+        height: 150px;
 
-.footer__subscribe-title {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 38px;
-    text-transform: uppercase;
-    text-align: center;
-}
+        @include mobile {
+            width: 138px;
+            height: 143px;
+        }
 
-.footer__subscribe-subtitle {
-    display: block;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    text-align: center;
-}
+    }
 
-.footer__subscribe-form {
-    display: flex;
-    justify-content: center;
-}
+    &__review-text {
+        max-width: 360px;
+        max-height: 99px;
+        text-align: center;
+        margin-top: 30px;
+    }
 
-.footer__subscribe-input {
-    margin-top: 32px;
-    width: 322px;
-    height: 49px;
-    background: #E1E1E1;
-    border-radius: 50px 0 0 50px;
-    border: none;
-    text-indent: 22px;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-}
+    &__quote {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
 
-.footer__subscribe-button {
-    margin-top: 32px;
-    border-radius: 0 50px 50px 0;
-    width: 100px;
-    height: 51px;
-    color: $white-color;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 17px;
-    text-align: center;
-    padding: 7px 7px 6px 8px;
-    background: $red-rose-color;
-    margin-left: -80px;
-    border: none;
-}
+        @include mobile {
+            @include font(19px, 23px)
+        }
+    }
 
-.footer__socials {
-    background-color: $dark-gray;
-}
+    &__quote-italic {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
 
-.footer__socials-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    min-height: 79px;
-}
+        @include mobile {
+            @include font(18px, 22px);
+            font-style: italic;
+        }
+    }
 
-.footer__socials-list {
-    display: flex;
-}
+    &__subscribe {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-.footer__socials-item {
-    display: flex;
-    width: 32px;
-    height: 32px;
-    justify-content: center;
-    align-items: center;
-    margin: 0 7px 0 0;
-    background-image: url(../img/background_social_white.png);
-}
+    &__subscribe-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 38px;
+        text-transform: uppercase;
+        text-align: center;
 
-.footer__socials-item:hover {
-    background-image: url(../img/background_social_rose.png);
-}
+        @include tablet {
+            padding: 48px 0 0 0;
+        }
 
-.footer__copyright {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: $beige-color;
+        @include tablet {
+            padding: 59px 0 0 0;
+        }
+    }
+
+    &__subscribe-subtitle {
+        display: block;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    &__subscribe-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__subscribe-input {
+        margin-top: 32px;
+        width: 322px;
+        height: 49px;
+        background: #E1E1E1;
+        border-radius: 50px 0 0 50px;
+        border: none;
+        text-indent: 22px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+
+        @include mobile {
+            width: 309px;
+            height: 47px;
+        }
+    }
+
+    &__subscribe-button {
+        margin-top: 32px;
+        border-radius: 0 50px 50px 0;
+        width: 100px;
+        height: 51px;
+        color: $white-color;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        text-align: center;
+        padding: 7px 7px 6px 8px;
+        background: $red-rose-color;
+        margin-left: -80px;
+        border: none;
+
+        @include mobile {
+            width: 100px;
+            height: 49px;
+        }
+    }
+
+    &__socials {
+        background-color: $dark-gray;
+    }
+
+    &__socials-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 79px;
+
+        @include mobile {
+            flex-direction: column-reverse;
+            min-height: 143px;
+        }
+    }
+
+    &__socials-list {
+        display: flex;
+
+        @include mobile {
+            padding: 52px 0 40px 0;
+        }
+    }
+
+    &__socials-item {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 7px 0 0;
+        background-image: url(../img/background_social_white.png);
+    }
+
+    &__socials-item:hover {
+        background-image: url(../img/background_social_rose.png);
+    }
+
+    &__copyright {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: $beige-color;
+
+        @include mobile {
+            margin: 0 0 9px 0;
+        }
+    }
 }

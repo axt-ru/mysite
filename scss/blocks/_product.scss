@@ -1,6 +1,10 @@
 .product__img {
     display: block;
     position: relative;
+
+    @include min-mobile {
+        width: 100%;
+    }
 }
 
 .product__button {
@@ -53,6 +57,10 @@
     align-items: center;
     flex-direction: column;
     margin: 97px 0 48px 0;
+
+    @include mobile {
+        margin: 64px 0 64px 0;
+    }
 }
 
 .products__title {
@@ -72,10 +80,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .products__item {
     width: 360px;
+
+    @include min-mobile {
+        width: 100%;
+    }
 }
 
 .product__description {
