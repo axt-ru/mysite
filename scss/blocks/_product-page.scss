@@ -1,0 +1,114 @@
+.product-page__title {
+    display: flex;
+    justify-content: space-between;
+    min-height: 148px;
+    background-color: $light-pink-color;
+
+}
+
+.product-page__heading {
+    text-transform: uppercase;
+    @include font(24px, 29px, 400);
+    color: $dark-pink-color;
+    margin: 59px 0 60px 230px;
+}
+
+.breadcrumb-item {
+    color: $dark-pink-color;
+    text-transform: uppercase;
+}
+
+.breadcrumb-item-link {
+    @include font(14px, 17px, 300);
+    color: $dark-color;
+    text-decoration: none;
+}
+
+.breadcrumb {
+    margin: 65px 230px 66px 0;
+}
+
+.women-collection__carousel {
+    background-color: $lighter-gray-color;
+    z-index: 2;
+}
+
+.carousel__img-center {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 11px;
+}
+
+.w-100 {
+    width: 597px;
+}
+
+.women-collection__description {
+    max-width: 1140px;
+    margin-top: 20px;
+    border: 1px solid $lighter-gray;
+    z-index: 5;
+    min-height: 601px;
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.women-collection__description-title {
+    @include font(14px, 17px, 300);
+    color: $dark-pink-color;
+    text-transform: uppercase;
+    margin: 65px 0 12px 0;
+}
+
+.women-collection__description-subtitle {
+    @include font(18px, 22px, 300);
+    text-transform: uppercase;
+    color: $dark-beige-color;
+    margin: 12px 0 48px 0;
+}
+
+.women-collection__description-text {
+    @include font(14px, 17px, 300);
+    color: $dark-text-color;
+    max-width: 555px;
+    min-height: 51px;
+    text-align: center;
+}
+
+.women-collection__description-price {
+    @include font(24px, 28px, 300);
+    color: $dark-pink-color;
+    margin: 32px 0 65px 0;
+}
+
+.women-collection__parameter {
+    display: flex;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border-color: transparent;
+    color: $dark-beige-color;
+    text-transform: uppercase;
+    @include font(14px, 17px, 400)
+}
+
+.women-collection__product-button {
+    margin: 49px 0 65px 0;
+    width: 138px;
+    height: 43px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    border: 1px solid $dark-pink-color;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark-pink-color;
+}
+
+.products_in_product-page {
+    margin: 129px 0 128px 0;
+}

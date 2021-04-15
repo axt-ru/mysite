@@ -640,7 +640,7 @@ products__button:focus {
   .footer__quote {
     font-size: 19px;
     line-height: 23px;
-    font-weight: normal;
+    font-weight: 400;
   }
 }
 
@@ -655,7 +655,7 @@ products__button:focus {
   .footer__quote-italic {
     font-size: 18px;
     line-height: 22px;
-    font-weight: normal;
+    font-weight: 400;
     font-style: italic;
   }
 }
@@ -725,7 +725,7 @@ products__button:focus {
   margin-top: 32px;
   border-radius: 0 50px 50px 0;
   width: 100px;
-  height: 51px;
+  height: 49px;
   color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
@@ -874,7 +874,6 @@ products__button:focus {
   text-indent: 17px;
   font-size: 13px;
   font-weight: 300;
-  line-height: 16px;
   letter-spacing: 0em;
   color: #B1B1B1;
 }
@@ -1011,5 +1010,133 @@ products__button:focus {
   height: 15px;
   background-image: url("../img/checkbox.png");
   background-size: 20px 16px;
+}
+
+.product-page__title {
+  display: flex;
+  justify-content: space-between;
+  min-height: 148px;
+  background-color: #F8F3F4;
+}
+
+.product-page__heading {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #F16D7F;
+  margin: 59px 0 60px 230px;
+}
+
+.breadcrumb-item {
+  color: #F16D7F;
+  text-transform: uppercase;
+}
+
+.breadcrumb-item-link {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #5D5D5D;
+  text-decoration: none;
+}
+
+.breadcrumb {
+  margin: 65px 230px 66px 0;
+}
+
+.women-collection__carousel {
+  background-color: #F7F7F7;
+  z-index: 2;
+}
+
+.carousel__img-center {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11px;
+}
+
+.w-100 {
+  width: 597px;
+}
+
+.women-collection__description {
+  max-width: 1140px;
+  margin-top: 20px;
+  border: 1px solid #EAEAEA;
+  z-index: 5;
+  min-height: 601px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.women-collection__description-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #F16D7F;
+  text-transform: uppercase;
+  margin: 65px 0 12px 0;
+}
+
+.women-collection__description-subtitle {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  margin: 12px 0 48px 0;
+}
+
+.women-collection__description-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #5E5E5E;
+  max-width: 555px;
+  min-height: 51px;
+  text-align: center;
+}
+
+.women-collection__description-price {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #F16D7F;
+  margin: 32px 0 65px 0;
+}
+
+.women-collection__parameter {
+  display: flex;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border-color: transparent;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+}
+
+.women-collection__product-button {
+  margin: 49px 0 65px 0;
+  width: 138px;
+  height: 43px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: 1px solid #F16D7F;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #F16D7F;
+}
+
+.products_in_product-page {
+  margin: 129px 0 128px 0;
 }
 /*# sourceMappingURL=style.css.map */
