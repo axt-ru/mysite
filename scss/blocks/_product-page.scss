@@ -30,7 +30,7 @@
 
 .women-collection__carousel {
     background-color: $lighter-gray-color;
-    z-index: 2;
+
 }
 
 .carousel__img-center {
@@ -44,14 +44,16 @@
 }
 
 .women-collection__description {
+    position: relative;
     max-width: 1140px;
-    margin-top: 20px;
-    border: 1px solid $lighter-gray;
+    margin-top: -40px;
+    border: 1px solid $light-gray;
     z-index: 5;
     min-height: 601px;
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    background: white;
 }
 
 .women-collection__description-title {
