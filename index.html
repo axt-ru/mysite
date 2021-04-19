@@ -22,34 +22,38 @@
                 <img src="./img/loupe.svg" alt="loupe" width="26" height="27">
             </div>
             <div>
-                <button type="button" class="header__button">
-                    <img src="./img/burger.svg" alt="burger" width="32" height="23">
-                </button>
+                <div class="dropdown" style="display: inline-block; margin-right: 10px;">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg width="32" height="23" viewBox="0 0 32 23" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                                fill="#E8E8E8" />
+                        </svg>
+                    </a>
 
-                <nav class="header__navigation">
-                    <h2 class="header__title">menu</h2>
-                    <ul class="header__navigation-list">
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="padding-top: 30px;">
                         <li class="header__navigation-item">
-                            <a class="header__sub-title" href="">man</a>
+                            <a class="header__sub-title" href="./product.html">man</a>
                             <ul class="header__sub-navigation-list">
-                                <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">Denim</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Accessories</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Bags</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Denim</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">T-Shirts</a></li>
                             </ul>
                         </li>
                         <li class="header__navigation-item">
-                            <a class="header__sub-title" href="">woman</a>
+                            <a class="header__sub-title" href="./product.html">woman</a>
                             <ul class="header__sub-navigation-list">
-                                <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">Polos</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
-                                <li><a href="#" class="header__sub-navigation-link">Shirts</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Accessories</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Jackets & Coats</a>
+                                </li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Polos</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">T-Shirts</a></li>
+                                <li><a href="./product.html" class="header__sub-navigation-link">Shirts</a></li>
                             </ul>
                         </li>
                         <li class="header__navigation-item">
-                            <a class="header__sub-title" href="">kids</a>
+                            <a class="header__sub-title" href="./product.html">kids</a>
                             <ul class="header__sub-navigation-list">
                                 <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
                                 <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
@@ -60,7 +64,7 @@
                             </ul>
                         </li>
                     </ul>
-                </nav>
+                </div>
 
                 <a class="header__link" href="registration.html"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
                 <a class="header__link-opacity" href="./cart.html"><img src="./img/cart.svg" alt="cart" width="32"
@@ -303,6 +307,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/bootstrap.bundle.js"></script>
+
 </body>
 
 </html>
