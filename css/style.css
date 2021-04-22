@@ -213,7 +213,7 @@ body {
   margin-bottom: 20px;
 }
 
-.header_container {
+.header__container {
   display: flex;
   justify-content: space-between;
   min-height: 75px;
@@ -557,7 +557,7 @@ body {
   padding: 25px 29px;
 }
 
-.product_button {
+.product__button {
   display: none;
 }
 
@@ -609,6 +609,10 @@ products__button:focus {
 .benefit {
   background-color: #222224;
   margin: 0 auto;
+}
+
+.benefit__heading {
+  display: none;
 }
 
 .benefit__list {
@@ -1195,7 +1199,7 @@ products__button:focus {
 .btn-secondary {
   background-color: transparent;
   border-color: transparent;
-  color: #4D4D4D;
+  color: #6F6E6E;
   text-transform: uppercase;
   font-size: 14px;
   line-height: 17px;
@@ -1541,5 +1545,144 @@ products__button:focus {
   border: none;
   margin-top: 17px;
   align-self: center;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 360px);
+  grid-template-rows: repeat(3, 581px);
+  justify-content: center;
+  grid-row-gap: 30px;
+  grid-column-gap: 30px;
+}
+
+.catalog-filter {
+  position: relative;
+  width: 71%;
+  margin: 0 auto;
+}
+
+.catalog-filter__parameter {
+  min-height: 133px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-filter__options {
+  display: block;
+  background: transparent;
+  border: none;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 50%;
+  transform: translate(0, 50%);
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+}
+
+.alert {
+  display: none;
+  position: absolute;
+  top: 30%;
+  transform: translate(-2%, 1%);
+  color: #F16D7F;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 600;
+  z-index: 500;
+}
+
+.catalog-filter__options:hover + .alert {
+  display: block;
+}
+
+.catalog-filter__radio {
+  display: none;
+}
+
+.catalog-filter__radio-label {
+  display: inline-block;
+  position: relative;
+  padding: 0 30px 6px 31px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #6F6E6E;
+}
+
+.catalog-filter__radio-label::before {
+  position: absolute;
+  content: '';
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 2px;
+  border: 1px solid #A4A4A4;
+}
+
+.catalog-filter__options:active + .alert {
+  display: block;
+}
+
+.catalog-filter__item {
+  margin: 27px 0 27px 0;
+}
+
+.catalog-filter__sub-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #F26376;
+}
+
+.catalog-filter__line {
+  transform: translate(0, -10px);
+}
+
+.catalog-filter__sub-navigation-link {
+  display: block;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #6F6E6E;
+  text-transform: capitalize;
+  margin: 0 0 11px 34px;
+}
+
+.catalog__scroll {
+  margin: 48px auto 96px auto;
+}
+
+.catalog__scroll-control {
+  width: 283px;
+  height: 43px;
+  border: 1px solid #EBEBEB;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog__scroll-text {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 300;
+  color: #A4A4A4;
+}
+
+.catalog__scroll-item:first-child {
+  margin: 0 0 0 15px;
+  transform: translate(0, -2px);
+}
+
+.catalog__scroll-item:last-child {
+  margin: 0 15px 0 0;
+  transform: translate(0, -2px);
 }
 /*# sourceMappingURL=style.css.map */

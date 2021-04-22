@@ -2445,7 +2445,7 @@ textarea.form-control-lg {
 
 .form-select {
   display: block;
-  width: 100%;
+  width: 250px;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
@@ -3893,7 +3893,7 @@ fieldset:disabled .btn {
   top: 100%;
   z-index: 1000;
   display: none;
-  min-width: 10rem;
+
   padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
@@ -4178,7 +4178,7 @@ fieldset:disabled .btn {
 
 .dropdown-item {
   display: block;
-  width: 100%;
+  width: 79px;
   padding: 0.25rem 1rem;
   clear: both;
   font-weight: 400;
@@ -5193,7 +5193,7 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: #F16D7F;
 }
 
 .pagination {
